@@ -2,8 +2,12 @@
 NK-Cinema is a React app that provide movies and TV shows information.<br />
 This app using the MovieDB database and API to render data and movie information.
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# How To Start
+1. Download the todo-list zip file
+2. Open the command line 
+3. Go to the 'todo-list' folder and type 'npm install'
+4. Type 'npm start'
+5. Enjoy the app
 
 ## Available Scripts
 
