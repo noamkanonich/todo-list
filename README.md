@@ -1,6 +1,5 @@
 # Description
-NK-Cinema is a React app that provide movies and TV shows information.<br />
-This app using the MovieDB database and API to render data and movie information.
+Todo List is a React app that provide you a list with tasks that you can add, delete and edit as you wish.
 
 # How To Start
 1. Download the todo-list zip file
