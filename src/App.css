@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg,rgb(242, 240, 255) 0%,rgb(178, 178, 184) 50%);
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 580px;
+  min-height: 600px;
+  background: #161822;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .todo-list {
+    width: 420px; 
+  }
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.todo-complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  margin: auto;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgb(255, 20, 12);
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.add-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+
+  background: linear-gradient(90deg,rgb(255, 20, 12) 0%,rgb(250, 121, 0) 100%);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #ffb514;
+}
+
+.todo-button.edit {
+  background: linear-gradient(90deg,rgb(255, 192, 20) 0%,rgb(255, 180, 17) 100%);
+  padding: 16px 22px;
+  border: 0px solid #ffb514;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-list-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(90deg,rgb(20, 255, 39) 0%,rgb(3, 122, 62) 100%);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-list-row:nth-child(4n + 1) {
+  background: linear-gradient(90deg,rgb(255, 28, 12) 0%,rgb(250, 142, 0) 100%);
+}
+
+.todo-list-row:nth-child(4n + 2) {
+  background: linear-gradient(90deg,rgba(255, 12, 241, 1) 0%,rgba(250, 0, 135, 1) 100%);
+}
+
+.todo-list-row:nth-child(4n + 3) {
+  background: linear-gradient(90deg,rgba(20, 159, 255, 1) 0%,rgb(12, 62, 128) 100%);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.complete-button {
+  margin-right: 6px;
+  color: #fff;
+} 
+
+.complete-button:hover {
+  color: rgb(190, 189, 189);
+}
+
+.delete-button {
+  margin-right: 5px;
+  color: #fff;
+} 
+
+.delete-button:hover {
+  color: rgb(190, 189, 189);
+}
+
+.edit-button {
+  color: #fff;
+}
+
+.edit-button:hover {
+  color: rgb(190, 189, 189);
+}
