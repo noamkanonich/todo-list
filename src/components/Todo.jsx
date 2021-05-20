@@ -26,9 +26,8 @@ function Todo(props){
 
     <div className={todo.isComplete ? 'todo-list-row todo-complete' : 'todo-list-row'} key={index}>
       
-      <div key={todo.id} onClick={() => props.completedTodoTask(todo.id)}>
-        <span>{todo.date} | </span>
-        <span>{todo.description}</span>
+      <div>
+        <span>{todo.date} | {todo.description}</span>
       </div>
 
       <div className='buttons'>
