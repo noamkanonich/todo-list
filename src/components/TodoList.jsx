@@ -22,12 +22,7 @@ function TodoList() {
             return;
         }
 
-        setTodos(prev => prev.map(setItem => (setItem.id === todoId ? newTodoValue : setItem)));
-    }
-
-    function removeTodoTask(id){
-        const removedArr = [...todos].filter(todo => todo.id !== id);
-        setTodos(removedArr);
+        setTodos(prevTodoTask => prevTodoTask.map(setItem => (setItem.id === todoId ? newTodoValue : setItem)));
     }
 
     function completedTodoTask(id){
@@ -39,24 +34,27 @@ function TodoList() {
         });
         setTodos(updatedTodos);
     }
+    
+    function removeTodoTask(id){
+        const removedTodosArray = [...todos].filter(todo => todo.id !== id);
+        setTodos(removedTodosArray);
+    }
 
     useEffect(() => {
         localStorage.setItem("todos", JSON.stringify(todos))}, [todos]);
 
     return (
         <>
-
-        <h1>Todo List App</h1>
-        <TodoForm onSubmit={addTodoTask} />
-        <Todo
-            todos={todos}
-            completedTodoTask={completedTodoTask}
-            removeTodoTask={removeTodoTask}
-            updateTodoTask={updateTodoTask}
-        />
-        
+            <h1>Todo List App</h1>
+            <TodoForm onSubmit={addTodoTask} />
+            <Todo
+                todos={todos}
+                completedTodoTask={completedTodoTask}
+                removeTodoTask={removeTodoTask}
+                updateTodoTask={updateTodoTask}
+            />
         </>
-    );
+        );
     }
 
 export default TodoList;
