@@ -8,6 +8,12 @@ Todo List is a responsive React app that provide you a list with tasks that you 
 4. Type 'npm start'
 5. Enjoy the app
 
+# Screenshots
+![Untitled](https://user-images.githubusercontent.com/55742997/119108745-35903200-ba29-11eb-86a0-1889146702d5.jpg)
+
+![ssad](https://user-images.githubusercontent.com/55742997/119108757-37f28c00-ba29-11eb-9fcb-f3fec15571b8.jpg)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
