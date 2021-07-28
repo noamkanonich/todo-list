@@ -1,5 +1,5 @@
 # Description
-Todo List is a responsive React app that provide you a list with tasks that you can add, delete and edit as you wish.
+Todo List is a responsive React app that provides you a list with tasks that you can add, delete and edit as you wish.
 
 # How To Start
 1. Download the todo-list zip file
